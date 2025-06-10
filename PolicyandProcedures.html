@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="favicon.ico.png">
+    <title>Welcome to the SALT Institute</title>
+</head>
+<body>
+    <header class="header">
+        <img src="SaltMedia/Story Assisted Living Training.png" style="border-radius: 15px;">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="AboutUs.html">About Us</a>
+        </nav>
+
+    </header>
+
+            <div class="Cart"><a href="Cart.html"><img src="SaltMedia/download-hd-shopping-cart-black-logo-icon-png-701751694973932xwblxf69dg.png"></a></div>
+
+    <div class="spacer"></div>
+
+    <div class="homecontent">
+
+        <h1>Policy and Procedures</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="SaltMedia/policy-and-procedure-template-06.jpg" style="width:100%">
+  <div class="text">Policy and Procedures Template</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="SaltMedia/policy-and-procedure-template-06.jpg" style="width:100%">
+  <div class="text">Policy and Procedures Template</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="SaltMedia/policy-and-procedure-template-06.jpg" style="width:100%">
+  <div class="text">Policy and Procedures Template</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; padding: 15px; font-size: max(1vw, min(15px)); margin: 0;">
+  <img src="SaltMedia/policies_and_procedures_1200x627.jpg" alt="Senior woman talking" style="border-radius: 5px; max-width: 300px; width: 100%; margin-right: 15px; margin-bottom: 15px; flex-shrink: 0;">
+  
+  <div style="flex: 1; min-width: 250px;">
+    <p style="margin: 0;">
+      Here at the Story Assisted Living Institute, we offer a list of Policies and Procedures that you can have, personalizeable to your
+      own company's name and specific needs.
+      <br><br>
+      The image above shows one real-world example of how you will learn firsthand to help your patients or residents. Through this course,
+      you will gain not only an appreciation for the ailments faced by those you assist, but also the certification required to provide excellent memory care services.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+</body>
+</html>
