@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="favicon.ico.png">
+    <title>Welcome to the SALT Institute</title>
+</head>
+<body>
+    <header class="header">
+        <img src="SaltMedia/Story Assisted Living Training.png" style="border-radius: 15px;">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Courses.html">Courses</a>
+            <a href="PolicyandProcedures.html">Policies</a>
+            <a href="AboutUs.html">About Us</a>
+        </nav>
+
+    </header>
+
+
+    <div class="spacer"></div>
+
+    <div class="homecontent">
+
+        <h1 style="align-self: center; align-content: center; text-align: center; background-color: #74846c; padding: 5px; border-radius: 15px;color: #e4ecce;">Policy and Procedures</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="SaltMedia/policy-and-procedure-template-06.jpg" style="width:100%; height: 100%;">
+  <div class="text">Policy and Procedures Template</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="SaltMedia/policy-and-procedure-template-06.jpg" style="width:100%; height: 100%;">
+  <div class="text">Policy and Procedures Template</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="SaltMedia/policy-and-procedure-template-06.jpg" style="width:100%; height: 100%;">
+  <div class="text">Policy and Procedures Template</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; padding: 15px; font-size: max(1vw, min(15px)); margin: 0; flex-direction: column; ">
+  
+  <div style="flex: 1; min-width: 250px; background-color: #74846c; border-radius: 10px;color: whitesmoke;">
+    <p style="align-self: center; align-content: center; text-align: center;">
+      Here at the Story Assisted Living Institute, we offer a list of Policies and Procedures that you can have personalized to your
+      own company's name and specific needs.
+      <br><br>
+      The process of personalizing your Policies and Procedures is simple. 
+      <br><br>
+      First you choose which package you want 
+      <br><br>
+      Then you fill out the google form with your companies specifics and Stripe Order Confirmation 
+      <br><br>
+      Then our team will have your selected policies to you within 1-3 business days!
+    </p>
+
+    <br>
+    <p class="List" style="align-self: center; align-content: center; text-align: center;"><a style="align-self: center; align-content: center; text-align: center;background-color: #e4ecce;
+    color: rgb(92, 33, 33); padding: 5px; border-radius: 5px;" href="AvailablePolicies.html" target="_blank">List of our available Policies!</a></p>
+    <br>
+
+  </div>
+  </div>
+
+ <br><br>
+
+
+ 
+  <h1 style="align-self: center; align-content: center; text-align: center; background-color: #e4ecce;color: #74846c; padding: 5px;border-radius: 15px;">Available Packages:</h1>
+
+
+  
+  <div style="display: flexbox; background-color: white; border-radius: 10px; padding: 8px; height: fit-content; width: fit-content; align-items: center;align-self: center; text-align: center;">
+  <h2 style="align-self: center; align-content: center; text-align: center;">All Policies and Procedures</h2>
+  <h3 style="align-self: center; align-content: center; text-align: center;width: 70%;">Includes all the necessary policies and procedures <br> required to run your very own assisted living home!</h3>
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">$200</h2>
+  <div style= "display: flexbox; align-self: center;"> 
+    <img style="border-radius: 15px;padding: 7px;max-width: 232px;max-height: 380px;width: 60%; height: auto;margin: auto;"  src="SaltMedia/polocies-compliance-operation-method-system.jpg">
+<a href="https://buy.stripe.com/test_6oU8wR1OC6x06cI8N28og08" class="Stripe-Button" target="_blank">
+  Buy Now
+</a></div> </div>
+
+<br><br>
+
+  <div style="display: flex;flex-wrap: wrap;width: 90%;; height: 35vw; align-items: center;align-self: center;padding:10px;font-size: 1vw;gap:10px ;">
+<div style="display: flexbox; background-color: white; border-radius: 10px; padding: 8px; height: 90%; width: 32%; text-align: center; overflow: hidden;">
+  <h2 style="align-self: center; align-content: center; text-align: center;">Policy Ten-pack</h2>
+  <h3 style="align-self: center; align-content: center; text-align: center;width: 70%;">Includes ten policies <br> of your choosing from our list!</h3>
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">$79</h2>
+   <img style="border-radius: 15px;padding: 7px;max-width: 232px;max-height: 380px;width: 60%; height: auto;margin: auto;"  src="SaltMedia/concept-different-office-accessories-paper-with-clip.jpg">
+<a href="https://buy.stripe.com/test_aFadRbbpcf3w6cI6EU8og0a" class="Stripe-Button" target="_blank">
+  Buy Now
+</a> </div>
+
+
+<div style="display: flexbox; background-color: white; border-radius: 10px; padding: 8px; height: 90%; width: 32%; text-align: center;">
+  <h2 style="align-self: center; align-content: center; text-align: center;">Policy Three-pack</h2>
+  <h3 style="align-self: center; align-content: center; text-align: center;width: 70%;">Includes three policies <br> of your choosing from our list!</h3>
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">$22</h2>
+     <img style="border-radius: 15px;padding: 7px;max-width: 232px;max-height: 380px;width: 60%; height: auto;margin: auto;"  src="SaltMedia/concept-different-office-accessories-paper-with-clip.jpg">
+<a href="https://buy.stripe.com/test_14AdRb1OCbRkcB6e7m8og0b" class="Stripe-Button" target="_blank">
+  Buy Now
+</a>
+</div> 
+
+<div style="display: flexbox; background-color: white; border-radius: 10px; padding: 8px; height: 90%; width: 32%;text-align: center;">
+  <h2 style="align-self: center; align-content: center; text-align: center;">Single Policy</h2>
+  <h3 style="align-self: center; align-content: center; text-align: center;width: 70%;">Includes any policy <br> of your choosing from our list!</h3> 
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">$8</h2>
+  <img style="border-radius: 15px;padding: 7px;max-width: 232px;max-height: 380px;width: 60%; height: auto;margin: auto;"  src="SaltMedia/closeup-hands-passing-contract-unrecognizable-businessman.jpg">
+<a href="https://buy.stripe.com/test_14A00ldxk3kOgRm5AQ8og0c" class="Stripe-Button" target="_blank">
+  Buy Now
+</a>
+</div>
+</div> 
+
+<br><br><br>
+
+<div class="Trademark">© SALT 2026</div>
+</body>
+</html>
